@@ -205,7 +205,7 @@ static void *threaded_quicksort( void *arg )
             sorted_less = recursive_quicksort( less_cnt, less );
         }
     } else {
-        sorted_less = malloc( 0 );
+        sorted_less = NULL;
     }
 
     if ( more_cnt > 0 ) {
@@ -217,7 +217,7 @@ static void *threaded_quicksort( void *arg )
             sorted_more = recursive_quicksort( more_cnt, more );
         }
     } else {
-        sorted_more = malloc( 0 );
+        sorted_more = NULL;
     }
 
     if ( spawned_less ) {
@@ -321,8 +321,7 @@ int main( int argc, char *argv[] )
     }
 
     if ( optind >= argc ) {
-        fprintf( stderr, "Error: missing input file\n" );
-        return EXIT_FAILURE;
+        fprintf( stderr, "usage: %s [-p] file_of_ints\n", argv[0] );        return EXIT_FAILURE;
     }
     if ( optind < argc - 1 ) {
         fprintf( stderr, "Error: extra arguments after filename\n" );
