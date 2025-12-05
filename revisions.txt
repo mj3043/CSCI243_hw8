@@ -1,41 +1,27 @@
-commit 468aadb7784b5614132cfa96dc7335711dc59d7a
-Author: Munkh-Orgil Jargalsaikhan <mj3043@rit.edu>
-Date: Fri Dec 5 06:15:30 2025
+Dec 2, 2025
+-----------
+- Created the starter file quicksort.c and set up the basic structure.
+- Added headers, main() skeleton, and command-line argument parsing (-p flag).
+- Wrote the file-reading function to load integers from the input file.
+- Tested simple file input to make sure integers were being stored correctly.
 
-    working version
+Dec 3, 2025
+-----------
+- Implemented non-threaded recursive quicksort.
+- Wrote partition_array() and merge_partitions() helper functions.
+- Added print_array() for the -p flag.
+- Finished recursive_quicksort() and verified it works on small input cases.
 
+Dec 4, 2025
+-----------
+- Started threaded version: created thread_args_t struct and global thread counter.
+- Implemented threaded_quicksort() including creating/joining left/right threads.
+- Added fallback to recursive_quicksort() if thread creation fails.
+- Fixed memory issues with returned arrays and merging results.
 
-commit 13b1ac8b17488726dc227c77d0883051592af517
-Author: Munkh-Orgil Jargalsaikhan <mj3043@rit.edu>
-Date: Fri Nov 14 04:48:06 2025
-
-    HW7 final submission with working mcrypt and KStream
-
-
-commit 20205da25e86d56837ebea4ddb661cc16e4036d5
-Author: Munkh-Orgil Jargalsaikhan <mj3043@rit.edu>
-Date: Fri Nov 14 04:20:25 2025
-
-    Initial commit
-
-
-commit 77369022666fa8e88b4bed14f8c727a3f5979996
-Author: Munkh-Orgil Jargalsaikhan <mj3043@rit.edu>
-Date: Thu Oct 30 10:45:49 2025
-
-    Add .gitignore to hide junk
-
-
-commit 42361f8c064a8ddecd2ff0e2fe9d03dd9e948e21
-Author: Munkh-Orgil Jargalsaikhan <mj3043@rit.edu>
-Date: Thu Oct 30 10:32:28 2025
-
-    Final submission
-
-
-commit b3bf1b573bc64b560313a3d5ae6aae944ba3b4ca
-Author: Munkh-Orgil Jargalsaikhan <mj3043@rit.edu>
-Date: Thu Oct 30 10:19:50 2025
-
-    FINAL: Matrix ADT complete
-
+Dec 5, 2025
+-----------
+- Finished top-level threaded quicksort logic in main().
+- Added timing output and thread count output.
+- Cleaned up code, comments, and tested with multiple input files.
+- Final debugging, removed unused code, and confirmed both versions work.
