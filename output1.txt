@@ -1,0 +1,3 @@
+Non-threaded time:  XXXXXXX
+Threaded time:      XXXXXXX
+Threads spawned:    XXXXXXX

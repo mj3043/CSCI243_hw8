@@ -1,0 +1,1 @@
+CFLAGS = -ggdb -std=c99 -Wall -Wextra -pthread
